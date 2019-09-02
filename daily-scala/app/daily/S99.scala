@@ -1,14 +1,10 @@
 package daily
 
 class S99 {
-  // p14 Duplicate the elements of a list.
-  def duplicate(ls: List[String]): List[String] = ???
-
-  // p15 Duplicate the elements of a list a given number of times.
-  def duplicateN(n: Int, ls: List[String]): List[String] = ???
-
   // p09 Pack consecutive duplicates of list elements into sublists.
-  def pack(ls: List[String]): List[List[String]] = ???
+  def pack(ls: List[String]): List[List[String]] = {
+    List(ls)
+  }
 
   // p10 Run-length encoding of a list.
   def encode(ls: List[List[String]]): List[(Int, String)] = ???
