@@ -13,6 +13,7 @@ describe('fizzBuzz', () => {
       })
     });
   });
+
   describe('3の倍数を渡した場合', () => {
     describe('3を渡した場合', () => {
       it('Fizzを返すこと', () => {
