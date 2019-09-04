@@ -26,7 +26,7 @@ class FizzBuzzController implements angular.IController {
 function init () {
   angular
     .module('myApp')
-    .directive('fizzBuzz', () => new FizzBuzzComponent());
+    .component('fizzBuzz',  new FizzBuzzComponent());
 }
 
 export {init as default};
