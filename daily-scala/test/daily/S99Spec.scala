@@ -14,23 +14,27 @@ class S99Spec extends FunSpec {
       }
     }
   }
-//
-//  describe("#encode") {
-//    describe("Given List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')") {
-//      it("return List((4,'a'), (1,'b'), (2,'c'), (2,'a'), (1,'d'), (4,'e'))") {
-//
-//      }
-//    }
-//  }
-//
-//  describe("#encodeModified") {
-//    describe("Given List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')") {
-//      it("return List((4,'a'), 'b', (2,'c'), (2,'a'), 'd', (4,'e'))") {
-//
-//      }
-//    }
-//  }
-//
+
+ describe("#encode") {
+   describe("Given List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')") {
+     it("return List((4,'a'), (1,'b'), (2,'c'), (2,'a'), (1,'d'), (4,'e'))") {
+       val expected = List((4, "a"), (1, "b"), (2, "c"), (2, "a"), (1, "d"), (4, "e"))
+       val actual = s99.encode(List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"))
+       assert(actual == expected)
+     }
+   }
+ }
+
+ describe("#encodeModified") {
+   describe("Given List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')") {
+     it("return List((4,'a'), 'b', (2,'c'), (2,'a'), 'd', (4,'e'))") {
+       val expected = List((4, "a"), "b", (2, "c"), (2, "a"), "d", (4, "e"))
+       val actual = s99.encodeModified(List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"))
+       assert(actual == expected)
+     }
+   }
+ }
+
 //  describe("#decode") {
 //    describe("Given List((4,'a'), (1,'b'), (2,'c'), (2,'a'), (1,'d'), (4,'e'))") {
 //      it("return List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')") {
