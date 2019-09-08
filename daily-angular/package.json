@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --bail --progress --profile",
     "start": "webpack-dev-server",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "mock-server": "json-server mock-server/db.json --routes mock-server/route.json --delay 2000 -p 3100"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "html-loader": "^0.5.5",
     "jasmine": "^2.6.0",
     "jasmine-ts": "^0.3.0",
+    "json-server": "^0.15.1",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.0",
