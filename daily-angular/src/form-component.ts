@@ -3,12 +3,12 @@ declare function require(x: string): any;
 
 class FormComponent implements angular.IComponentOptions {
     restrict = 'E';
-    controller = HttpController;
+    controller = FormController;
     controllerAs = 'ctrl';
     template = require('./form-component.html')
 }
 
-class HttpController implements angular.IController {
+class FormController implements angular.IController {
 }
 
 function init () {
