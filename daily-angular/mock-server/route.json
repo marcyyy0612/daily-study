@@ -1,3 +1,4 @@
 {
+  "/api/user": "/user",
   "/api/applicants": "/applicants"
 }

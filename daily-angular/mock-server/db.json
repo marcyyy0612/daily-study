@@ -1,4 +1,7 @@
 {
+  "user": {
+    "fullName": "test"
+  },
   "applicants": [
     {
       "name": "鈴木一郎",
