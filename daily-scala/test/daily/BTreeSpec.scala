@@ -3,9 +3,6 @@ package daily
 import org.scalatest.FunSpec
 
 class BTreeSpec extends FunSpec {
-<<<<<<< HEAD
-
-=======
   describe("Leaf") {
     val leaf = Leaf(2)
     describe("#size") {
@@ -74,5 +71,4 @@ class BTreeSpec extends FunSpec {
 
     }
   }
->>>>>>> 7cb0607... WIP size and max
 }
