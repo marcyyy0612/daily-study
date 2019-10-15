@@ -1,0 +1,6 @@
+<h4>応募者</h4>
+<p>{{ ctrl.date }}</p>
+<ul>
+    <li ng-repeat="application in ctrl.applications">{{ application.name }}（{{ application.status }}）</li>
+</ul>
+

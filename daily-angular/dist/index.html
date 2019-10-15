@@ -3,15 +3,29 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="app.js"></script>
     <meta charset="utf-8">
 </head>
 <body ng-app="myApp">
-    <a ui-sref="fizzBuzz">FizzBuzz</a>
-    <a ui-sref="counter">Counter</a>
-    <a ui-sref="http">Http</a>
-    <a ui-sref="form">From</a>
-    <a ui-sref="component">Component</a>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" ui-sref="fizzBuzz">FizzBuzz</a>
+                <a class="nav-item nav-link" ui-sref="counter">Counter</a>
+                <a class="nav-item nav-link" ui-sref="http">Http</a>
+                <a class="nav-item nav-link" ui-sref="form">From</a>
+                <a class="nav-item nav-link" ui-sref="component">Component</a>
+                <a class="nav-item nav-link" ui-sref="filter">Filter</a>
+            </div>
+        </div>
+    </nav>
+
     <ui-view></ui-view>
+</div>
 </body>
 </html>

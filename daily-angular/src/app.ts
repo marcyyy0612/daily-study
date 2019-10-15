@@ -6,6 +6,7 @@ import httpComponent from './http-component.ts';
 import formComponent from './form-component.ts';
 import parentComponent from './component/parent-component';
 import childComponent from './component/child-component';
+import filterComponent from './filter-component';
 
 const app = angular.module('myApp', ['ui.router']);
 
@@ -15,6 +16,7 @@ httpComponent();
 formComponent();
 parentComponent();
 childComponent();
+filterComponent();
 
 app.config(($stateProvider: any) => {
     const fizzBuzzState = {
@@ -42,11 +44,17 @@ app.config(($stateProvider: any) => {
         url: '/component',
         template: '<parent-component></parent-component>'
     };
+    const filterState = {
+        name: 'filter',
+        url: '/filter',
+        template: '<filter></filter>'
+    };
     $stateProvider
         .state(fizzBuzzState)
         .state(counterState)
         .state(httpState)
         .state(formState)
-        .state(componentState);
+        .state(componentState)
+        .state(filterState);
 });
 
