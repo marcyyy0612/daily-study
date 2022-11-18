@@ -30,10 +30,10 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.0",
     "karma-typescript-preprocessor": "^0.3.1",
-    "karma-webpack": "^2.0.4",
+    "karma-webpack": "^2.0.13",
     "ts-loader": "^2.0.1",
     "typescript": "^2.2.1",
-    "webpack": "^2.2.1",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^2.4.5"
   }
 }
